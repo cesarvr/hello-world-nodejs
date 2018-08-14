@@ -4,9 +4,9 @@ function fibonacci(num) {
   return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-let rnd = () => Math.floor(Math.random() * 6) + 1   
+const N = 5
 
 require('http').createServer((req, res) => {
-    
-    res.end( 'Hello World V1' +  fibonacci(50) )
+ console.log('running fib: ', N) 
+ res.end( 'Hello World V1' +  fibonacci(N) )
 }).listen(8080)
