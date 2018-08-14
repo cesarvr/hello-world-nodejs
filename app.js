@@ -4,7 +4,7 @@ function fibonacci(num) {
   return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-const N = 5
+const N = 50
 
 require('http').createServer((req, res) => {
  console.log('running fib: ', N) 
