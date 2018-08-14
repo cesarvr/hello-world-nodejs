@@ -8,5 +8,5 @@ let rnd = () => Math.floor(Math.random() * 6) + 1
 
 require('http').createServer((req, res) => {
     
-    res.end( 'Hello World V1', fibonacci(rnd(5)) )
+    res.end( 'Hello World V1' +  fibonacci(rnd(5)) )
 }).listen(8080)
