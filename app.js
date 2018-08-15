@@ -4,9 +4,9 @@ function fibonacci(num) {
   return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-const N = 50
+const N = 5
 
 require('http').createServer((req, res) => {
  console.log('running fib: ', N) 
- res.end( 'Hello World V1' +  fibonacci(N) )
+ res.end( 'fibonacci: iter:'+N+ "->" +  fibonacci(N) )
 }).listen(8080)
