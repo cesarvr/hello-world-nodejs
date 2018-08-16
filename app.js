@@ -15,5 +15,5 @@ const N = 5
 
 require('http').createServer((req, res) => {
  const query = get_query(req) 
- res.end( 'fibonacci: iter:'+N+ "->" +  fibonacci(N) + ' query->' + query )
+ res.end( 'fibonacci: iter:'+N+ '->' +  fibonacci(N) + ' query->' + JSON.stringify(query) )
 }).listen(8080)
