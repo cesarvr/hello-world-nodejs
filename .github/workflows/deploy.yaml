@@ -1,0 +1,14 @@
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - main
+
+jobs:
+  print-username:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print echo line
+      run: echo Hello World
